@@ -1,0 +1,54 @@
+Simulating a system from scratch:
+Overall flow of the system page 7
+
+-Events in M/M/1:
+	- Job arrival
+	- Service completion
+	- Page 5 to see the flow of what happens to a event
+
+-Data structure
+	- Job
+		- Arrival time
+		- Execution time
+	- Server 
+		- Busy/idle state variabel
+		- # of jobs served
+	- Queue
+		- List of waiting jobs (FIFO)
+	Mention more data structure, unsure if this is needed?
+
+-Generic functions
+	-scheduleEvent(event, time)
+	-event=getEvent();
+	-inter-arrival times following exponential distribution
+	-job execution times following exponential distribution
+	(Code for numberGen is in the slides)
+
+-System-specific functions
+	-Define events
+	-Define the operation steps for each event
+	-Determine the most appropriate data stucture
+
+-Result from Simulation
+	-Each costumers arrival time and departure time
+	-Avarage of the above(all the jobs)
+	-Average numbers of costumers in the system as increasing the traffic intensity
+	-Average queue length
+
+-Create a simulation table for printing the graphs
+
+Plan for the homework
+- Read slide about the basics again
+- Read up on MM1 queue
+- Read the already implemented MM1
+- First create a program with events which can simulate the system
+- Create analysis tools and datastructures to support these
+- Create graphs in GNU thing
+- Then create graphs from queuing analysis
+
+
+Help:
+http://www.edaboard.com/thread286558.html
+http://www.csee.usf.edu/~christen/tools/mm1.c
+
+	
